@@ -12,7 +12,7 @@ To test the example application run the following commands.
 
 * To run the server run.
 
-        Run AbcService using inteliJ
+        Run AbcService using inteliJ with yml path
 
 * To hit the ECHO ECHO example (hit refresh a few times).
 
