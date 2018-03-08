@@ -1,14 +1,13 @@
-package dropwizard.kotlin.service
+package dropwizard.abc
 
-import dropwizard.kotlin.service.filter.ContextFilter
-import dropwizard.kotlin.service.healthcheck.TemplateHealthCheck
-import dropwizard.kotlin.service.resource.*
+import dropwizard.abc.healthcheck.TemplateHealthCheck
+import dropwizard.abc.resource.*
 import io.dropwizard.Application
 import io.dropwizard.setup.Environment
 
-class ABCService : Application<HomeServiceConfig>() {
+class ABCService : Application<AbcServiceConfig>() {
 
-    override fun run(config: HomeServiceConfig, env: Environment) {
+    override fun run(config: AbcServiceConfig, env: Environment) {
         env.jersey().register(EcoResource())
         env.healthChecks().register("default", TemplateHealthCheck())
     }

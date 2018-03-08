@@ -1,4 +1,4 @@
-package dropwizard.kotlin.service.resource
+package dropwizard.abc.resource
 
 import javax.ws.rs.GET
 import javax.ws.rs.Path

@@ -1,4 +1,4 @@
-package dropwizard.kotlin.service.core
+package dropwizard.abc.core
 
 class Template(private val content: String, private val defaultName: String) {
 

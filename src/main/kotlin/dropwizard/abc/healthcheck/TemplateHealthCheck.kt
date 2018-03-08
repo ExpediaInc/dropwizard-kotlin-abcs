@@ -1,8 +1,7 @@
-package dropwizard.kotlin.service.healthcheck
+package dropwizard.abc.healthcheck
 
 import com.codahale.metrics.health.HealthCheck
-import dropwizard.kotlin.service.core.Template
-import java.util.*
+import dropwizard.abc.core.Template
 
 class TemplateHealthCheck : HealthCheck() {
 

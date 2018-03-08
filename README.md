@@ -18,8 +18,8 @@ To test the example application run the following commands.
 
 	http://localhost:9090/echo
 
-* Each of us should be able to build the following scenario
+* Each of us should be able to build the following scenario (Write a test for the below case)
 
 	curl -H "Content-Type: application/json" -X POST -d '{"name":"Person Name","team":"engineering"}' http://localhost:9090/people
 	
-	open *http://localhost:9090/people* in the browser and you should be able to retrieve the first person you entered in
+	open *http://localhost:9090/people* in the browser and you should be able to retrieve the first person you entered.

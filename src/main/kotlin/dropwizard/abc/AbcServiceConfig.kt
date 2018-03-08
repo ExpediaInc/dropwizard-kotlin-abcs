@@ -1,4 +1,4 @@
-package dropwizard.kotlin.service
+package dropwizard.abc
 
 import io.dropwizard.Configuration
 

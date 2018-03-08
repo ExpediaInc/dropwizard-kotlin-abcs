@@ -1,4 +1,4 @@
-package dropwizard.kotlin.service
+package dropwizard.abc
 
 import io.dropwizard.testing.ResourceHelpers.resourceFilePath
 import io.dropwizard.testing.junit.DropwizardAppRule
@@ -11,12 +11,11 @@ import org.junit.Test
 import javax.ws.rs.client.Client
 import javax.ws.rs.core.Response
 
-
 class EcoResourceIntTest {
 
     companion object {
         @ClassRule @JvmField
-        val rule = DropwizardAppRule(HomeService::class.java, resourceFilePath("config.yml"))
+        val rule = DropwizardAppRule(ABCService::class.java, resourceFilePath("config.yml"))
     }
 
     @Test
@@ -35,7 +34,6 @@ class EcoResourceIntTest {
         config.property(ClientProperties.READ_TIMEOUT, 15000)
         return JerseyClientBuilder.createClient(config)
     }
-
 }
 
 
