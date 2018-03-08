@@ -15,7 +15,7 @@ class EcoResourceTest {
 
     companion object {
         @ClassRule @JvmField
-        val rule = DropwizardAppRule(ABCService::class.java, resourceFilePath("config.yml"))
+        val rule = DropwizardAppRule(ABCService::class.java, resourceFilePath("config/abc.yml"))
     }
 
     @Test
