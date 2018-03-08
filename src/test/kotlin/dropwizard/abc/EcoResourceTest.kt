@@ -11,7 +11,7 @@ import org.junit.Test
 import javax.ws.rs.client.Client
 import javax.ws.rs.core.Response
 
-class EcoResourceIntTest {
+class EcoResourceTest {
 
     companion object {
         @ClassRule @JvmField
@@ -24,14 +24,14 @@ class EcoResourceIntTest {
                 .get(Response::class.java)
         assertEquals(200, response.status.toLong())
         assertEquals("application/json", response.headers.getFirst("Content-Type"))
-        val entity = response.readEntity(Map::class.java)
-        assertEquals("It works!", entity["message"])
+        val entity = response.readEntity(String::class.java)
+        assertEquals("ECO.... ECO... ECO", entity)
     }
 
     private fun client(): Client {
         val config = ClientConfig()
-        config.property(ClientProperties.CONNECT_TIMEOUT, 5000)
-        config.property(ClientProperties.READ_TIMEOUT, 15000)
+        config.property(ClientProperties.CONNECT_TIMEOUT, 2000)
+        config.property(ClientProperties.READ_TIMEOUT, 5000)
         return JerseyClientBuilder.createClient(config)
     }
 }
