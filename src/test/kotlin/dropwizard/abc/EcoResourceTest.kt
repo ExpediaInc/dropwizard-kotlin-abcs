@@ -25,7 +25,7 @@ class EcoResourceTest {
         assertEquals(200, response.status.toLong())
         assertEquals("application/json", response.headers.getFirst("Content-Type"))
         val entity = response.readEntity(String::class.java)
-        assertEquals("ECO.... ECO... ECO", entity)
+        assertEquals("ECHO.... ECHO... ECHO", entity)
     }
 
     private fun client(): Client {
