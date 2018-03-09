@@ -10,9 +10,13 @@ To test the example application run the following commands.
 
         mvn clean install
 
-* To run the server run.
+* To run the server run (intelliJ).
 
-        Run AbcService using inteliJ with yml path
+        java -jar target/dropwizard-kotlin-abcs.jar server src/main/resources/config.yml
+	
+* To run the server run (intelliJ).
+
+        Run AbcService using intelliJ with yml path
 
 * To hit the ECHO ECHO example (hit refresh a few times).
 
